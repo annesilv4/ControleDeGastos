@@ -7,7 +7,7 @@ export const isNegativo = (valor) => valor < 0;
 export const atualizarInterface = (gastosPorCategoria) => {
     const categorias = gastosPorCategoria.categorias;
 
-    categorias.forEaxh((categoria) => {
+    categorias.forEach((categoria) => {
         const element = obterElemento(categoria.nome);
         element.textContent = `${categoria.nome}: R$ ${formataMoeda(categoria.valor)}`;
     });
